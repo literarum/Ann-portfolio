@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/images/background.png);
+  padding-bottom: 15%;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding: 0;
+    width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #212121;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-left: 1.5%;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+}
+
+.header__span {
+  font-family: Lato, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.header__img {
+  object-fit: cover;
+  width: 40px;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-right: 25px;
+  list-style-type: none;
+  gap: 23px;
+  font-size: 20px;
+  font-family: Lato, sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.header__link1 {
+  color: #46a1c9 !important;
+  font-weight: 400;
+}
+
+.last__li {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.last__li::after {
+  content: url(/images/arrow_drop_down_white.svg);
+  margin-top: 5px;
+}
+
+.header__item {
+  display: inline;
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #46a1c9;
+}
+
+.search {
+  padding-right: 1.5%;
+}
+
+.dropbtn {
+  background-color: #212121;
+  font-weight: 100;
+  color: white;
+  padding: 15px 0;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Содержимое выпадающего списка (по умолчанию скрыто) */
+.dropdown-content {
+  padding: 20px 0;
+  display: none;
+  position: absolute;
+  right: -70px;
+  background-color: #212121;
+  min-width: 250px;
+  z-index: 1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+  color: #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Меняет цвет ссылок в выпадающем списке при наведении */
+.dropdown-content a:hover {
+  color: #46a1c9;
+}
+
+/* Показывает выпадающий список при наведении */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main__head {
+  font-family: "Neucha", cursive;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.head {
+  font-size: 87px;
+}
+
+.second__stroke {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 55px;
+  margin-top: 3%;
+}
+
+.section2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 11%;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 310px 1fr 1fr;
+  grid-column-gap: 3%;
+  grid-row-gap: 12%;
+  justify-items: center;
+  max-width: 80%;
+}
+
+.img__section2 {
+  max-width: 370px;
+}
+
+.main__img {
+  object-fit: cover;
+  margin-top: 20px;
+  width: 370px;
+}
+
+.paragraph {
+  grid-column: 2;
+  grid-row: 1;
+  font-family: "Neucha", cursive;
+  line-height: 1.8;
+  font-size: 30px;
+  text-align: justify;
+}
+
+.tab {
+  margin-left: 5%;
+}
+
+.mail__div {
+  margin-top: -4%;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.vk__div {
+  margin-top: -1%;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.mail {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 0.5em 22.5em;
+  text-decoration: none;
+  color: #1e6c92;
+  border: 1px solid #1e6c92;
+  background-color: transparent;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.vk {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 0.5em 23.3em;
+  text-decoration: none;
+  color: #1e6c92;
+  border: 1px solid #1e6c92;
+  background-color: transparent;
+  border-radius: 5px;
+  max-width: 100%;
+}
